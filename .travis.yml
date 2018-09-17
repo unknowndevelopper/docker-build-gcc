@@ -4,6 +4,7 @@ services:
 
 script:
   - docker build -t builder/gcc
-
+  - docker run builder/gcc cat /standalone-gcc-8.2.0.tar.gz >standalone-gcc-8.2.0.tar.gz
+  - ls -lh standalone-gcc-8.2.0.tar.gz
 
 
